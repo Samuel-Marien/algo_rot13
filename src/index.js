@@ -1,4 +1,17 @@
-function rot13(message) {
+let rotNumber = document.querySelector('.userNumberInput');
+let inputText = document.querySelector('.userTextInput');
+let outputText = document.querySelector('.userTextOutput');
+
+rotNumber.addEventListener('keyup', () => {
+    console.log(rotNumber.value);
+})
+
+inputText.addEventListener('keyup', () => {
+    outputText.value = rotX(inputText.value);
+})
+
+
+function rotX(message) {
     let newLettrer = 0;
     let newWords = "";
 
@@ -38,12 +51,5 @@ function rot13(message) {
         }
     }
     return newWords;
+
 }
-// console.log(rot13("ABCDE"));
-// console.log(rot13("abcde"));
-// console.log(rot13("NOPQR"));
-// console.log(rot13("nopqr"));
-// console.log(rot13("TEST"));
-// console.log(rot13("Test"));
-// console.log(rot13("aLiba!ba"));
-// console.log(rot13("aLi[]^ba!ba"));
