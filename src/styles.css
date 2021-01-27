@@ -9,23 +9,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(27, 26, 26);
 }
 
 main {
-    border: 1px solid black;
+    border: 1px solid burlywood;
+    box-shadow: 0 0 10px burlywood;
     margin-top: 75px;
     border-radius: 15px;
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background: url('https://cdn.pixabay.com/photo/2018/04/28/12/17/sculpture-3357150_960_720.jpg')center center no-repeat;
 }
 
 h1 {
     padding-top: 20px;
+    color: burlywood;
+}
+
+.userNumberInput {
+    margin-top: 20px;
 }
 
 .userNumberInput {
@@ -38,4 +46,11 @@ h1 {
     width: 80%;
     height: 40%;
     margin-top: 20px;
+    border-radius: 5px;
+}
+
+.userTextInput,
+.userTextOutput,
+.userNumberInput {
+    opacity: .6;
 }
